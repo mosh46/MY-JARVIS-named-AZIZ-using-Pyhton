@@ -18,7 +18,7 @@ def speak(string):
 def wishMe():
     now = datetime.datetime.now()
     hour = int(now.strftime("%I"))
-    print(hour)
+    # print(hour)
     if hour>=0 and hour<12:
         speak("Good Morning!")
 
@@ -76,11 +76,6 @@ if __name__ == "__main__":
 
         elif 'open stack overflow' in query:
             webbrowser.open("stackoverflow.com")   
-
-        
-        #elif 'what is the time' or "time" in query:
-        #    strTime = datetime.datetime.now().strftime("%H:%M:%S")    
-        #    speak(f"Sir, the time is {strTime}")
 
         elif "wikipedia" in query:
             speak('Searching Wikipedia...')
