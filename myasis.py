@@ -42,7 +42,7 @@ def take_command():
         print("Rcognizing......")
         query = r.recognize_google(audio,language="en-pk")
         print(f"user said : {query}")
-        speak(query)
+        # speak(query)
     except Exception as e:
         print("Say that again please...")
         print(e)  
@@ -89,7 +89,7 @@ if __name__ == "__main__":
                 try:
                     speak("Whome should I send?email id please")
                     mail = take_command()
-                    to = "quratulainbhurgri@gmail.com"  
+                    to = "receiver@gmail.com"  
                     speak("What should I say?")
                     content = take_command()+"from AZIZ Uzair ASIF"   
                     sendEmail(to, content)
@@ -100,5 +100,5 @@ if __name__ == "__main__":
         
         elif "quit" in query:
             exit()
-        else:
+        else: 
             print("please say it again")
